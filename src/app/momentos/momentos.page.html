@@ -1,0 +1,134 @@
+<ion-content [fullscreen]="true" scroll-y="true">
+  <div id="container">
+    <div class="main-content-div-portada">
+      <div class="back_div_portada">
+
+        <ion-buttons slot="start">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
+
+        <div class="text-card-portada">
+          <ion-title>
+            VINCENZO
+          </ion-title>
+        </div>
+
+        <div class="titulo-page">
+          <h2>Momentos</h2>
+        </div>
+
+        <div class="img-card-portada">
+          <img src="../assets/img/momentos.jpg" alt="">
+        </div>
+
+        <div class="text-info-card-momentos">
+          <p>3 Momentos de la serie</p>
+        </div>
+
+        <div class="card-background-page">
+          <!--Card 1 - Momentos-->
+          <ion-card>
+            <img src="../assets/img/m1.jpg" expand="block" (click)="setOpenM1(true)" />
+            <div class="card-title">La familia Cassano humilló al grupo Babel</div>
+            <div class="card-subtitle">Episodio 17</div>
+            <p class="card-p" expand="block" (click)="setOpenM1(true)">Ver mas...</p>
+        
+            <!--Modal 1 - Momentos-->
+            <ion-modal [isOpen]="isModalOpenM1">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title> Episodio 17 </ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpenM1(false)">
+                        <ion-icon name="close-outline"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <h1>La familia Cassano humilló al grupo Babel </h1>
+                  <div class="img-modal">
+                    <iframe  src="https://www.youtube.com/embed/q23dqpYyUA8"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                  <p>Los residentes emergieron uno por uno y se pavonearon fuera de la Plaza, todos vestidos con traje
+                    negro y corbata, marcando el comienzo oficial de su misión como miembros de la Familia Cassano.
+                    Concluyeron con éxito su primera misión para humillar a Jang Joon Woo y Choi Myung Hee (Kim Yeo Jin)
+                    frente a sus supuestos inversores durante la fiesta de licitación.</p>
+
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-card>
+
+
+          <!--Card 2 - Momentos-->
+          <ion-card>
+            <img src="../assets/img/m2.jpg" expand="block" (click)="setOpenM2(true)"/>
+            <div class="card-title">Vincenzo humilla al babo publicamente</div>
+            <div class="card-subtitle">Episodio 13</div>
+            <p class="card-p" expand="block" (click)="setOpenM2(true)">Ver mas...</p>
+            <!--Modal 2 - Momentos-->
+            <ion-modal [isOpen]="isModalOpenM2">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title> Episodio 13 </ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpenM2(false)">
+                        <ion-icon name="close-outline"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <h1>Vincenzo humilla al babo publicamente </h1>
+                  <div class="img-modal">
+                    <iframe  src="https://www.youtube.com/embed/Yx6UomEwPtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                 <p>Vicenzo deja caer un balde de sangre de cerdo encima de su enemigo Hong Cha-young(Babo).Song Joong-ki definitivamente compensó a Jeon Yeo-been por su elección de palomitas de maíz con ese final. Nada sabe mejor que ver fracasar el plan de tus enemigos con una caja de palomitas de maíz, con caramelo o no, en la mano.   </p>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-card>
+
+
+          <!--Card 3 - Momentos-->
+          <ion-card>
+            <img src="../assets/img/m3.jpg" expand="block" (click)="setOpenM3(true)" />
+            <div class="card-title">Entrada Triunfal</div>
+            <div class="card-subtitle">Episodio 05</div>
+            <p class="card-p" expand="block" (click)="setOpenM3(true)">Ver mas...</p>
+
+            <!--Modal 3- Momentos-->
+            <ion-modal [isOpen]="isModalOpenM3">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title> Episodio 05 </ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpenM3(false)">
+                        <ion-icon name="close-outline"></ion-icon>
+                      </ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <h1>Entrada Triunfal </h1>
+                  <div class="img-modal">
+                    <iframe  src="https://www.youtube.com/embed/xtP6FSCyN1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                <p>No podemos dejar fuera la entrada que ambos abogados hacen viajando en un auto deportivo mientras llegan a la corte, en ese momento todavía no habían mostrado sus estrategias pero sorprendieron a todos con su estilo.</p>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

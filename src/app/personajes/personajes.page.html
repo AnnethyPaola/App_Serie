@@ -1,0 +1,133 @@
+<ion-content [fullscreen]="true" scroll-y="true">
+  <div id="container">
+    <div class="main-content-div-portada">
+      <div class="back_div_portada">
+
+        <ion-buttons slot="start">
+          <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
+
+        <div class="text-card-portada">
+          <ion-title>
+            VINCENZO
+          </ion-title>
+        </div>
+
+        <div class="titulo-page">
+          <h2>Personajes</h2>
+        </div>
+
+        <div class="img-card-portada">
+          <img src="../assets/img/personajes.jpg" alt="">
+        </div>
+
+        <div class="text-info-card-personajes">
+          <p>3 personajes de la serie</p>
+        </div>
+
+        <div class="personajes-info">
+          <!-- Modal - Personaje 1 -->
+          <ion-card>
+            <ion-item>
+              Vincenzo Cassano
+              <ion-icon name="caret-forward-outline" expand="block" (click)="setOpen(true)"></ion-icon>
+              <ion-modal [isOpen]="isModalOpen1" >
+                <ng-template>
+                  <ion-header>
+                    <ion-toolbar>
+                      <ion-title> Vincenzo </ion-title>
+                      <ion-buttons slot="end">
+                        <ion-button (click)="setOpen(false)">
+                          <ion-icon name="close-outline"></ion-icon>
+                        </ion-button>
+                      </ion-buttons>
+                    </ion-toolbar>
+                  </ion-header>
+                  <ion-content class="ion-padding" >
+                      <h1> Vincenzo Cassano</h1>
+                      <div class="img-modal">
+                        <img src="../assets/img/vinecenzo.jpg" alt="">
+                    </div>
+                    <h2>Informacion</h2>
+                    <p>Es un abogado italiano y consigliere de la mafia italiana, que trabaja como asesor y experto en reconciliación de disputas. Es el hijo adoptivo del difunto jefe de la familia Cassano, una familia de la mafia.  </p>
+                    <p>Su nombre de nacimiento coreano es Park Joo-hyung y es el verdadero propietario de Geumga Plaza. Por lo general utiliza trajes elegantes hechos a medida. Su método para lidiar con los problemas mplica amenazar con usar la debilidad de la persona o amenazar con matar. </p>
+                    <p>A su llegada a Corea se convierte en el asesor del bufete de abogados "Jipuragi Law Firm" de Hong Yoo-chan a quien ayuda en su lucha contra Babel Pharmaceutical. Cuando ambos son atacados y Yoo-chan muere, Vincenzo se enfurence y decide vengarse de los responsables con la ayuda de Cha-young y la gente que vive en el Geumga Plaza. Luego de vengarse de Jang Jun-woo, decide irse de nuevo a Italia.</p>
+                    <p>Un año después, regresa a Corea del Sur y se reúne con Cha-young a quien finalmente le revela sus sentimientos. Antes de irse nuevamente, la invita a unirse a él en su isla en Italia</p>
+                  </ion-content>
+                </ng-template>
+              </ion-modal>
+            </ion-item>
+          </ion-card>
+
+          <!-- Modal - personajes 2 -->
+          <ion-card>
+            <ion-item>
+              Hong Cha-young
+              <ion-icon name="caret-forward-outline" expand="block" (click)="setOpen1(true)"></ion-icon>
+              <ion-modal [isOpen]="isModalOpen2" >
+                <ng-template>
+                  <ion-header>
+                    <ion-toolbar>
+                      <ion-title> Hong  </ion-title>
+                      <ion-buttons slot="end">
+                        <ion-button (click)="setOpen1(false)">
+                          <ion-icon name="close-outline"></ion-icon>
+                        </ion-button>
+                      </ion-buttons>
+                    </ion-toolbar>
+                  </ion-header>
+                  <ion-content class="ion-padding" scroll-y="">
+                      <h1> Hong Cha-young</h1>
+                      <div class="img-modal">
+                        <img src="../assets/img/hong.jpg" alt="">
+                    </div>
+                    <h2>Informacion</h2>
+                    <p>Es una abogada asociada del bufete de abogados "Woosang Firm" así como la hija de Hong Yoo-chan. Es una persona que tiende a reaccionar de forma exagerada.  </p>
+                    <p>Su método para lidiar con los problemas generalmente implican sobornos y aunque parece que está dispuesta a hacer cualquier cosa tal de ganar un caso, en realidad es una persona empática, que está dispuesta a proteger al inocente a toda costa. Aunque culpa a su padre por la muerte de su madre, queda destrozada por nunca haber sido más cercana a él, después de ser asesinado a manos de los hombres del grupo Babel.</p>
+                    <p>Luego de descubrir que el bufete donde trabaja está involucrado en el crimen e intenta manchar la imagen de su padre, renuncia y decide convertirse en la nueva directora ejecutiva de "Jipuragi Law Firm", el bufete de abogados de su padre.</p>
+                    <p>Poco después, se une a Vincenzo para vengarse de ellos. Más tarde, es secuestrada por Jang Jun-woo pero Vincenzó la rescata, mientras intentan huir recibe un disparo en la espalda, por lo que tiene que pasar un tiempo en el hospital. </p>
+                  </ion-content>
+                </ng-template>
+              </ion-modal>
+            </ion-item>
+          </ion-card>
+
+
+          <!-- Modal - personajes 3 -->
+          <ion-card>
+            <ion-item>
+              Jang Jun Woo
+              <ion-icon name="caret-forward-outline" expand="block" (click)="setOpen2(true)"></ion-icon>
+              <ion-modal [isOpen]="isModalOpen3" >
+                <ng-template>
+                  <ion-header>
+                    <ion-toolbar>
+                      <ion-title> Jang </ion-title>
+                      <ion-buttons slot="end">
+                        <ion-button (click)="setOpen2(false)">
+                          <ion-icon name="close-outline"></ion-icon>
+                        </ion-button>
+                      </ion-buttons>
+                    </ion-toolbar>
+                  </ion-header>
+                  <ion-content class="ion-padding" scroll-y="">
+                      <h1>Jang Jun Woo</h1>
+                      <div class="img-modal">
+                        <img src="../assets/img/jang.jpg" alt="">
+                    </div>
+                    <h2>Informacion</h2>
+                    <p>Aunque aparenta ser el inteligente, trabajador, educado y sincero pasante de derecho de primer año en el bufete de abogados "Woosang Law" que trabaja como pasante de Hong Cha-young. Aunque frente a otros actúa como ingenuo y torpe, por lo que es propenso a cometer errores, en realidad es un hombre peligroso a quien no le importa cometer asesinatos con tal de alcanzar sus objetivos. </p>
+                    <p>Más tarde se revela que en realidad Jun-woo es Jang Han-seok, el verdadero presidente de la corrupta "Babel Group", así como el hijo legítimo y mayor del antiguo presidente de la corporación</p>
+                    <p> También se descubre que Jun-woo fue responsable del asesinato de su padre, así como de la muerte de sus amigos en la escuela secundaria. Más tarde, mata a su hermano Jang Han-seo, cuando este intentaba proteger a Vincenzo y a Hong Cha-young. </p>
+                    <p>Finalmente recibe su castigo a manos de Vincenzo, quien luego de capturarlo, le hace pagar por todos sus crímenes torturándolo hasta morir.</p>
+                  </ion-content>
+                </ng-template>
+              </ion-modal>
+            </ion-item>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+

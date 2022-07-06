@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;400;700&display=swap');
+
+*{
+    --background:#fff;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+.menu-header-bg{
+    height:180px;
+    width: 350px;
+    background-color:#0f0a0f;
+    background: linear-gradient(to right, #0f0a0a, #5a5252);
+    box-shadow: 0px 1px 10px rgba(2, 2, 2, 0.767);
+    transform: rotate(-15deg);
+    border-radius:10px 10px 10px 50px;
+    margin-left: -18px;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+
+.header-content{
+    position:absolute;
+    top: 30px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius:50%;
+        border: 3px solid rgb(14, 13, 13);
+        margin-right: 14px;
+    }
+
+    h2{
+    font-weight: 400;
+    font-size: 20px;
+    }
+
+    p{
+        font-size: 15px;
+        color: #fff;
+        font-weight: 100;
+        letter-spacing: 0.4px;
+    }
+}
+
+ion-list{
+    --background-color: #fff;
+  
+}
+
+.menu-items{
+    margin:0px;
+    background-color: #fff;
+    
+    ion-icon{
+        margin-right: 10px;
+        color: #000;
+        font-size: 20px;
+    }
+
+    ion-item{
+        padding-left: 20px;
+        margin-bottom: 10px;
+        --background:#fff;
+        --color: #000;
+        font-size: 20px;
+    }
+
+    .active{
+        border-left: 5px solid;
+        color: #000000;
+        padding-left:15px;
+
+        ion-icon{
+            color: #000000;
+        }
+    }
+}
